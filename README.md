@@ -1,7 +1,7 @@
 # Glenn Bokondo - Professional Business Profile
 
 **Live Site**: [bokondo.net](https://bokondo.net)
-**Professional Contact**: glenn@bokondo.net
+**Professional Contact**: glenn@qry.zone
 
 ---
 
@@ -135,7 +135,7 @@ bokondo/
 
 ## 📬 Professional Contact
 
-- **Email**: glenn@bokondo.net
+- **Email**: glenn@qry.zone
 - **Portfolio**: [qry.zone](https://qry.zone)
 - **LinkedIn**: [Glenn Bokondo](https://linkedin.com/in/glenn-bokondo-98957b196/)
 - **GitHub**: [QRY91](https://github.com/QRY91)
