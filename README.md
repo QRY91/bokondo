@@ -36,6 +36,8 @@ bokondo/
 └── favicon.ico
 ```
 
+Stylesheet caching: Vercel serves `style.css` with a four-hour cache and ignores the `Cache-Control` override in `vercel.json` (the security headers there do apply). After every CSS edit, bump the `?v=` on the stylesheet link in all four pages.
+
 Content brief for the Oct 2026 rewrite: `~/notes/personal/bokondo-rewrite-brief.md`. Facts trace to `~/notes/personal/applications/cert-eu-431133/cv.html`; keep the two consistent.
 
 ## 🚀 Deployment to Vercel
