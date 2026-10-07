@@ -23,7 +23,7 @@ body {
     font-size: 14px;
 }
 main { max-width: var(--measure); margin: 0 auto; padding: 40px 20px; }
-nav.site { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 24px; color: var(--green); }
+nav.site { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 24px; color: var(--cyan); }
 nav.site a[aria-current="page"] { color: var(--title); }
 nav.site .lang { margin-left: auto; color: var(--orange); letter-spacing: 0.05em; }
 header.card {
@@ -94,14 +94,28 @@ footer {
 }
 footer .contact { justify-content: center; margin-top: 8px; }
 @media print {
-    body { background: #fff; color: #000; font-size: 10.5pt; line-height: 1.45; }
+    @page { margin: 14mm 16mm; }
+    body { background: #fff; color: #000; font-size: 9.5pt; line-height: 1.35; }
     main { max-width: none; padding: 0; }
-    nav.site { display: none; }
-    header.card, section, footer, .item, .avail { background: none; border-color: #999; color: inherit; }
-    h1, h2, h3, .lede, .item h3, footer, nav.site a { color: #000; }
-    .role, .meta, ul.plain li::before { color: #444; }
+    nav.site, .print-hide { display: none !important; }
+    header.card { text-align: left; padding: 0 0 8pt 0; margin-bottom: 10pt; background: none; border: 0; border-bottom: 1px solid #999; border-radius: 0; }
+    header.card .contact { justify-content: flex-start; gap: 2pt 12pt; margin-top: 6pt; }
+    h1 { font-size: 1.6em; color: #000; }
+    h2 { font-size: 1.05em; color: #000; margin-bottom: 6pt; padding-bottom: 2pt; border-color: #999; }
+    h3, .item h3 { color: #000; }
+    .role, .meta, .lede, footer, nav.site a { color: #000; }
+    .role, .meta { color: #333; }
+    section { background: none; border: 0; border-radius: 0; padding: 0; margin-bottom: 10pt; break-inside: auto; }
+    h2, h3 { break-after: avoid; }
+    p { margin-bottom: 5pt; }
+    .lede { font-size: 1.05em; }
+    .avail { background: none; border-left: 2px solid #999; padding: 2pt 0 2pt 8pt; margin-top: 6pt; }
+    .item { background: none; border-left: 2px solid #999; border-radius: 0; padding: 0 0 0 8pt; margin-bottom: 8pt; break-inside: avoid; }
+    ul.plain { margin-top: 4pt; padding-left: 12pt; }
+    ul.plain li { margin-bottom: 2pt; }
+    ul.plain li::before { color: #666; }
     a { color: #000; }
-    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: #444; }
-    section { margin-bottom: 14px; padding: 0 0 10px 0; border: 0; border-bottom: 1px solid #999; break-inside: avoid; }
-    .item { padding: 0 0 0 10px; border-left: 2px solid #999; }
+    section a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; color: #444; }
+    footer { background: none; border: 0; border-top: 1px solid #999; border-radius: 0; text-align: left; padding: 6pt 0 0 0; margin-top: 6pt; }
+    footer .contact { justify-content: flex-start; }
 }
