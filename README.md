@@ -28,10 +28,15 @@ The site showcases a non-traditional career path focused on systematic problem-s
 
 ```
 bokondo/
-├── index.html          # Main landing page (business profile)
+├── index.html          # Home: the card (headline, what I get hired for, work shipped, how I work, background, toolbox, writing)
+├── about/index.html    # About: the story in headed sections, proof points, contact
+├── style.css           # Shared stylesheet; token contract (--paper --ink --dim --accent --rule --measure), dark scheme, print styles
+├── DESIGN-BRIEF.md     # Register and visual direction (Aug 2026)
 ├── README.md           # This file
-└── .gitignore         # Standard ignore patterns
+└── favicon.ico
 ```
+
+Content brief for the Oct 2026 rewrite: `~/notes/personal/bokondo-rewrite-brief.md`. Facts trace to `~/notes/personal/applications/cert-eu-431133/cv.html`; keep the two consistent.
 
 ## 🚀 Deployment to Vercel
 

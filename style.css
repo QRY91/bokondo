@@ -1,0 +1,106 @@
+/* bokondo.net — shared stylesheet. Zenburn palette and monospace type, carried over from the 2025 page. */
+:root {
+    --bg: #3f3f3f;
+    --panel: #2b2b2b;
+    --inset: #383838;
+    --rule: #4f4f4f;
+    --ink: #dcdccc;
+    --dim: #9f9f8f;
+    --title: #f0dfaf;
+    --cyan: #8cd0d3;
+    --orange: #dfaf8f;
+    --rose: #cc9393;
+    --green: #7f9f7f;
+    --marker: #5f7f5f;
+    --measure: 900px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--bg);
+    font-size: 14px;
+}
+main { max-width: var(--measure); margin: 0 auto; padding: 40px 20px; }
+nav.site { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 24px; color: var(--green); }
+nav.site a[aria-current="page"] { color: var(--title); }
+header.card {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 36px 20px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+}
+h1 { font-size: 2.2em; color: var(--title); font-weight: normal; }
+.role { color: var(--dim); margin-top: 8px; }
+.contact { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+header.card .contact { justify-content: center; }
+a { color: var(--cyan); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; color: var(--orange); }
+:focus-visible { outline: 1px solid var(--cyan); outline-offset: 2px; }
+section {
+    background: var(--panel);
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+}
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: var(--cyan);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+}
+h3 { font-size: 1.1em; margin: 20px 0 10px 0; color: var(--orange); font-weight: normal; }
+section h3:first-child { margin-top: 0; }
+p { margin-bottom: 12px; }
+p:last-child { margin-bottom: 0; }
+.lede { color: var(--title); font-size: 1.1em; }
+.avail {
+    padding: 15px;
+    background: var(--inset);
+    border-left: 3px solid var(--cyan);
+    border-radius: 2px;
+    margin-top: 16px;
+}
+.item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--inset);
+    border-radius: 3px;
+    border-left: 3px solid var(--rose);
+}
+.item:last-child { margin-bottom: 0; }
+.item h3 { margin: 0 0 6px 0; color: var(--rose); font-weight: bold; font-size: 1em; }
+.item .meta { color: var(--dim); font-size: 0.95em; margin-bottom: 8px; }
+ul.plain { list-style: none; margin: 12px 0 0 0; padding-left: 20px; }
+ul.plain li { margin-bottom: 6px; position: relative; }
+ul.plain li::before { content: "| "; color: var(--marker); margin-right: 8px; }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--green);
+    padding: 20px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+}
+footer .contact { justify-content: center; margin-top: 8px; }
+@media print {
+    body { background: #fff; color: #000; font-size: 10.5pt; line-height: 1.45; }
+    main { max-width: none; padding: 0; }
+    nav.site { display: none; }
+    header.card, section, footer, .item, .avail { background: none; border-color: #999; color: inherit; }
+    h1, h2, h3, .lede, .item h3, footer, nav.site a { color: #000; }
+    .role, .meta, ul.plain li::before { color: #444; }
+    a { color: #000; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: #444; }
+    section { margin-bottom: 14px; padding: 0 0 10px 0; border: 0; border-bottom: 1px solid #999; break-inside: avoid; }
+    .item { padding: 0 0 0 10px; border-left: 2px solid #999; }
+}

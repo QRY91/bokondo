@@ -1,263 +1,187 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Glenn Bokondo</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glenn Bokondo — software engineer</title>
+    <meta name="description" content="Software engineer in Lanaken, Belgium. Integration-heavy systems taken to production and kept running; AI in real workflows with the checks that make it trustworthy." />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <main>
+        <nav class="site" aria-label="Site">
+            <a href="/" aria-current="page">Home</a>
+            <a href="/about/">About</a>
+            <a href="https://qry.zone">Writing</a>
+            <a href="https://github.com/QRY91">GitHub</a>
+            <a href="mailto:glenn@bokondo.net">Email</a>
+        </nav>
 
-            body {
-                font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
-                line-height: 1.6;
-                color: #dcdccc;
-                background: #3f3f3f;
-                font-size: 14px;
-            }
+        <header class="card">
+            <h1>Glenn Bokondo</h1>
+            <p class="role">Software engineer — integrations, production systems, applied AI · Lanaken, Belgium</p>
+            <div class="contact">
+                <a href="mailto:glenn@bokondo.net">glenn@bokondo.net</a>
+                <a href="https://github.com/QRY91">github.com/QRY91</a>
+                <a href="https://linkedin.com/in/glenn-bokondo-98957b196/">LinkedIn</a>
+                <a href="https://qry.zone">qry.zone</a>
+            </div>
+        </header>
 
-            .container {
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 40px 20px;
-            }
+        <section>
+            <p class="lede">
+                I build integration-heavy software and take it to production.
+                Then I keep it running.
+            </p>
+            <p>
+                I have run a product solo for a Fortune Global 500 client, so I think
+                about support, hand-over and the 2 a.m. page as much as the code.
+                For the past year most of my work has been putting AI into real
+                workflows and building the gates and checks that make it trustworthy.
+            </p>
+            <p class="avail">
+                Open to a full-time engineering role in the public sector or research,
+                and to freelance integration work. Dutch, French and English.
+                An hour from Brussels, fifteen minutes from Maastricht.
+            </p>
+        </section>
 
-            header {
-                text-align: center;
-                margin-bottom: 60px;
-                padding: 40px 0;
-                background: #2b2b2b;
-                border: 1px solid #4f4f4f;
-                border-radius: 3px;
-            }
+        <section>
+            <h2>What I get hired for</h2>
+            <ul class="plain">
+                <li>Integrations nobody else wants: ERP, SOAP, OAuth2, government portals, legacy imports.</li>
+                <li>Taking a half-built system to production, with tests, monitoring and a runbook.</li>
+                <li>AI assistants and automation that stay honest: retrieval over your own data, validators, human review, evaluations.</li>
+                <li>Data pipelines and search over large catalogues.</li>
+                <li>Being the one engineer when the lead leaves: analysis, release management, support.</li>
+                <li>Hand-over: documentation your next developer can actually use.</li>
+            </ul>
+        </section>
 
-            h1 {
-                font-size: 2.2em;
-                color: #f0dfaf;
-                font-weight: normal;
-            }
+        <section>
+            <h2>Work I've shipped</h2>
 
-            .section {
-                background: #2b2b2b;
-                margin-bottom: 30px;
-                padding: 30px;
-                border: 1px solid #4f4f4f;
-                border-radius: 3px;
-            }
-
-            h2 {
-                font-size: 1.4em;
-                margin-bottom: 20px;
-                color: #8cd0d3;
-                border-bottom: 1px solid #4f4f4f;
-                padding-bottom: 8px;
-                font-weight: normal;
-            }
-
-            h3 {
-                font-size: 1.1em;
-                margin: 20px 0 10px 0;
-                color: #dfaf8f;
-                font-weight: normal;
-            }
-
-            .journey-phase {
-                margin-bottom: 25px;
-                padding: 15px;
-                background: #383838;
-                border-left: 3px solid #8cd0d3;
-                border-radius: 2px;
-            }
-
-            .project {
-                margin-bottom: 20px;
-                padding: 15px;
-                background: #383838;
-                border-radius: 3px;
-                border-left: 3px solid #cc9393;
-            }
-
-            .project-title {
-                font-weight: bold;
-                color: #cc9393;
-                margin-bottom: 8px;
-                font-size: 1em;
-            }
-
-            ul {
-                margin: 12px 0;
-                padding-left: 20px;
-                list-style: none;
-            }
-
-            li {
-                margin-bottom: 6px;
-                position: relative;
-            }
-
-            li:before {
-                content: "| ";
-                color: #5f7f5f;
-                margin-right: 8px;
-            }
-
-            a {
-                color: #8cd0d3;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-                color: #dfaf8f;
-            }
-
-            strong {
-                color: #f0dfaf;
-                font-weight: normal;
-            }
-
-            em {
-                color: #dfaf8f;
-                font-style: normal;
-            }
-
-            p {
-                margin-bottom: 12px;
-            }
-
-            .separator {
-                color: #5f7f5f;
-                margin: 0 8px;
-            }
-
-            footer {
-                text-align: center;
-                margin-top: 40px;
-                color: #7f9f7f;
-                font-size: 0.9em;
-                padding: 20px;
-                background: #2b2b2b;
-                border: 1px solid #4f4f4f;
-                border-radius: 3px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Glenn Bokondo</h1>
-            </header>
-
-            <section class="section">
-                <h2>The Professional Journey</h2>
+            <div class="item">
+                <h3>ERP quotation platform — industrial tooling</h3>
+                <p class="meta">2026 · bttmline · NestJS · Nuxt · PostgreSQL · Exact Online · SOAP/REST</p>
                 <p>
-                    Psychology studies, game design, callcenter work, bootcamp, startup burnout, back to school at 33. Not the typical CS path. But I've learned that caring about the craft—really caring about building things that work—matters more than the route you took to get here.
+                    Two companies, two ERP administrations and a supplier's SOAP price
+                    service. Designed, built and live in one month: a 2.4M-product
+                    catalogue, search under 50 ms over 1.2M rows, a hot path cut from
+                    8.5 s to under 0.1 s, 900k rows ingested with zero errors.
+                    Mutation testing and fuzzing caught a 45% pricing error before
+                    any customer saw it.
                 </p>
+            </div>
 
-                <div class="journey-phase">
-                    <h3>Phase 1: Thrown In Deep (2020)</h3>
-                    <p>
-                        Months out of a C# bootcamp, I was working on enterprise logistics for Maersk. API integrations with German customs systems, client relationships, project management—scope that usually requires a team. Learned fast because I had to.
-                    </p>
-                </div>
-
-                <div class="journey-phase">
-                    <h3>Phase 2: Learning Through Friction (2021-2022)</h3>
-                    <p>
-                        Worked in environments where thoroughness was discouraged but quality was still expected. The classic double-bind. Instead of just moving on, I documented what worked and what didn't—patterns that now inform how I build things.
-                    </p>
-                </div>
-
-                <div class="journey-phase">
-                    <h3>Phase 3: Breadth and Depth (2023-2024)</h3>
-                    <p>
-                        Explored widely: cybersecurity fundamentals, game design, hardware configuration, Go, Rust, Python. Built real projects in each area. The goal was understanding how different domains think about problems—patterns that transfer across fields.
-                    </p>
-                </div>
-
-                <div class="journey-phase">
-                    <h3>Phase 4: Back to School (2024-2025)</h3>
-                    <p>
-                        Built Panopticron during my BornDigital internship—a monitoring dashboard now running in production. Presented it as my graduate program capstone. Formalized what I'd already been doing in the field.
-                    </p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Project Portfolio</h2>
-
-                <div class="project">
-                    <div class="project-title">Panopticron</div>
-                    <p>
-                        <a href="https://panopticron.vercel.app">panopticron.vercel.app</a>
-                    </p>
-                    <p>
-                        Monitoring dashboard that aggregates project health data from multiple sources into one view. Built during my BornDigital internship, now running in production. Worker-based sync, custom visualization components, real-time updates.
-                    </p>
-                </div>
-
-                <div class="project">
-                    <div class="project-title">Quantum Dice</div>
-                    <p>
-                        A game that teaches quantum mechanics through play. The dice behave according to actual quantum rules—superposition, entanglement, measurement collapse. Complex concepts become intuitive when you can interact with them.
-                    </p>
-                </div>
-
-                <div class="project">
-                    <div class="project-title">QRY Tools</div>
-                    <p>
-                        Local-first developer utilities I built to solve my own problems. <a href="https://github.com/QRY91/uroboro">Uroboro</a> preserves context between coding sessions. Everything runs locally, no cloud dependencies, no data leaving your machine.
-                    </p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Technical Background</h2>
+            <div class="item">
+                <h3>AI customer-support assistant — e-commerce</h3>
+                <p class="meta">2026 · bttmline · LangGraph · pgvector · Claude and Gemini APIs</p>
                 <p>
-                    <strong>Languages:</strong> JavaScript/TypeScript, Python, Go, C. Some Rust exploration.
+                    Helpdesk webhook to LangGraph pipeline to a draft reply in Dutch,
+                    French or English, with validators and a reviewer loop that feeds
+                    corrections back into the knowledge base. 8,700 tickets analysed
+                    first; 510 automated tests; an evaluation UI for A/B prompt runs.
+                    Handed over with full documentation.
                 </p>
-                <p>
-                    <strong>Web:</strong> React, Next.js, Vercel, Supabase. Comfortable with the modern stack.
-                </p>
-                <p>
-                    <strong>Other:</strong> Security fundamentals (coursework + practical labs), system design, local-first architecture.
-                </p>
-                <p>
-                    I document as I build—not for its own sake, but because writing things down forces clearer thinking. The notes become useful later when I need to explain decisions or onboard someone else.
-                </p>
-            </section>
+            </div>
 
-            <section class="section">
-                <h2>Why Engineering</h2>
+            <div class="item">
+                <h3>Government-portal automation — agri-logistics</h3>
+                <p class="meta">2026 · bttmline · Playwright · NestJS · PostgreSQL</p>
                 <p>
-                    I care about the craft. Not just shipping features, but understanding why things work, building things that last, and leaving codebases better than I found them.
+                    Playwright automation against Flemish regulatory platforms (Mestbank,
+                    TRACES) and a transport-management API, with an authentication state
+                    machine, fully unit-tested routing rules and the DNS and server setup
+                    around it. The unglamorous plumbing that removes daily manual work.
                 </p>
-                <p>
-                    The non-traditional path taught me something: difficult experiences sharpen your thinking if you let them. Every frustrating system I've worked with became a lesson in what not to build. That perspective is hard to get from a smooth career trajectory.
-                </p>
-                <p>
-                    I'm looking for work where careful thinking is valued, where there's room to dig into problems properly, and where the goal is building things that actually work well—not just things that ship.
-                </p>
-            </section>
+            </div>
 
-            <footer>
+            <div class="item">
+                <h3>Mileviewer — logistics monitoring for Maersk</h3>
+                <p class="meta">2020–2022 · Oakfields · Node.js · MongoDB · React · Elasticsearch · AWS</p>
                 <p>
-                    Professional Contact:
-                    <a href="mailto:glenn@bokondo.net">glenn@bokondo.net</a>
+                    Developed most new features for a SaaS used by 15 Maersk offices.
+                    When the lead developer left, I ran it alone for a year: documented
+                    a 1,200-line import pipeline nobody understood, cleaned 13.3M records
+                    down to 406k, built the CI/CD and monitoring, shipped the releases,
+                    did on-site user research in Amsterdam.
                 </p>
-                <p>
-                    Portfolio: <a href="https://qry.zone">qry.zone</a>
-                    <span class="separator">|</span> LinkedIn:
-                    <a href="https://linkedin.com/in/glenn-bokondo-98957b196/"
-                        >Glenn Bokondo</a
-                    >
-                </p>
-            </footer>
-        </div>
-    </body>
+            </div>
+        </section>
+
+        <section>
+            <h2>How I work</h2>
+            <p>
+                Written specs and acceptance criteria before code; a definition of done
+                before "done". Tests that try to break the thing: mutation testing,
+                property-based testing, adversarial review. AI-assisted development with
+                the agent's actions gated and logged. Recaps in writing, in your language.
+                Remote by default, on site when it helps; Brussels, Maastricht and
+                Hasselt are all within the hour.
+            </p>
+        </section>
+
+        <section>
+            <h2>Agents &amp; research</h2>
+            <p>
+                A year of self-directed research into what makes LLM agents actually
+                work: harnesses where agents genuinely play eight commercial games
+                (Factorio, Kerbal Space Program, Dwarf Fortress, …) through
+                purpose-built mods, MCP servers, and curated tool surfaces. The
+                transferable finding (agents fail on screen-scraping and succeed on
+                structured state at the right abstraction level) is the same recipe
+                agent-driven QA, playtesting, and live-ops tooling need.
+            </p>
+            <ul class="plain">
+                <li><a href="https://qry.zone/doug-demon-core/">The Doug Demon Core</a> — what an agent patching its own tooling taught me about safety</li>
+                <li><a href="https://github.com/QRY91/uroboro">uroboro</a> — local-first development-context capture, Claude Code integration</li>
+                <li><a href="https://chasmlogic.com">chasmlogic.com</a> — the creative-technology face: real agent runs, human-gated narration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Background</h2>
+            <p>
+                Before software I spent four years in Carglass's customer contact
+                centre, in Dutch and French. Then a C# bootcamp at Train4SmartServices,
+                three years at Oakfields, a logistics software company where I ended up
+                running the product, a graduaat in Programming at PXL with an internship
+                at BornDigital, and a year at bttmline, a small consultancy, building
+                for SME clients. <a href="/about/">The long version.</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Toolbox</h2>
+            <p>
+                TypeScript/Node (NestJS, Nuxt, React) · Go · Python · Rust · C ·
+                PostgreSQL and pgvector · Docker, k3s and Ansible (homelab with local
+                inference) · Playwright · MCP servers · LangGraph · game engines
+                (Godot, LÖVE) on the side. Verification habits: mutation testing,
+                property/fuzz testing, adversarial agentic review, and honest
+                definitions of done.
+            </p>
+        </section>
+
+        <section>
+            <h2>Writing</h2>
+            <ul class="plain">
+                <li><a href="https://qry.zone/doug-demon-core/">The Doug Demon Core</a> — an agent patched its own tooling; what I changed afterwards</li>
+                <li><a href="https://qry.zone/who-validates-the-validators/">Who validates the validators?</a> — verification when the reviewer is also a model</li>
+                <li><a href="https://qry.zone/what-i-can-actually-do/">What I can actually do</a> — a week of AI-assisted output, measured, with the constraints</li>
+            </ul>
+            <p>More at <a href="https://qry.zone">qry.zone</a>.</p>
+        </section>
+
+        <footer>
+            <p>Send what you have: a repo, a screen recording, a list of problems. I reply within two working days.</p>
+            <div class="contact">
+                <a href="mailto:glenn@bokondo.net">glenn@bokondo.net</a>
+                <span>Lanaken, Belgium</span>
+            </div>
+        </footer>
+    </main>
+</body>
 </html>
