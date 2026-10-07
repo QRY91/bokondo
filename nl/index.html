@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glenn Bokondo — software engineer</title>
+    <meta name="description" content="Software engineer in Lanaken. Integratiezware systemen naar productie gebracht en draaiend gehouden; AI in echte werkstromen, met de controles die het betrouwbaar maken." />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="alternate" hreflang="en" href="https://www.bokondo.net/" />
+    <link rel="alternate" hreflang="nl" href="https://www.bokondo.net/nl/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.bokondo.net/" />
+</head>
+<body>
+    <main>
+        <nav class="site" aria-label="Site">
+            <a href="/nl/" aria-current="page">Home</a>
+            <a href="/nl/over/">Over mij</a>
+            <a href="https://qry.zone">Essays</a>
+            <a href="https://github.com/QRY91">GitHub</a>
+            <a href="mailto:glenn@bokondo.net">E-mail</a>
+            <a class="lang" href="/" hreflang="en" lang="en" title="English"><img src="/assets/flag-gb.svg" alt="" width="18" height="9" /><span class="visually-hidden">English</span></a>
+        </nav>
+
+        <header class="card">
+            <h1>Glenn Bokondo</h1>
+            <p class="role">Software engineer — integraties, productiesystemen, toegepaste AI · Lanaken</p>
+            <div class="contact">
+                <a href="mailto:glenn@bokondo.net">glenn@bokondo.net</a>
+                <a href="https://github.com/QRY91">github.com/QRY91</a>
+                <a href="https://linkedin.com/in/glenn-bokondo-98957b196/">LinkedIn</a>
+                <a href="https://qry.zone">qry.zone</a>
+            </div>
+        </header>
+
+        <section>
+            <p class="lede">
+                Ik bouw integratiezware software en breng ze in productie.
+                Daarna hou ik ze draaiend.
+            </p>
+            <p>
+                Ik heb een product in mijn eentje gerund voor een Fortune Global 500-klant,
+                dus ik denk even hard aan support, overdracht en de telefoon om twee uur
+                's nachts als aan de code. Het voorbije jaar ging het grootste deel van
+                mijn werk naar AI in echte werkstromen, en naar de controles en bewaking
+                die zo'n systeem betrouwbaar maken.
+            </p>
+            <p class="avail">
+                Open voor een voltijdse functie als software engineer bij de overheid of
+                in onderzoek, en voor freelance integratiewerk. Nederlands, Frans en Engels.
+                Een uur van Brussel, een kwartier van Maastricht.
+            </p>
+        </section>
+
+        <section>
+            <h2>Waarvoor men mij inschakelt</h2>
+            <ul class="plain">
+                <li>Integraties die niemand anders wil: ERP, SOAP, OAuth2, overheidsportalen, oude imports.</li>
+                <li>Een half gebouwd systeem naar productie brengen, met tests, monitoring en een runbook.</li>
+                <li>AI-assistenten en automatisering die eerlijk blijven: retrieval over je eigen data, validatoren, menselijke controle, evaluaties.</li>
+                <li>Datapipelines en zoeken in grote catalogi.</li>
+                <li>De enige engineer zijn als de lead vertrekt: analyse, releasebeheer, support.</li>
+                <li>Overdracht: documentatie waar je volgende ontwikkelaar echt iets aan heeft.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wat ik heb opgeleverd</h2>
+
+            <div class="item">
+                <h3>ERP-offerteplatform — industriële toelevering</h3>
+                <p class="meta">2026 · bttmline · NestJS · Nuxt · PostgreSQL · Exact Online · SOAP/REST</p>
+                <p>
+                    Twee bedrijven, twee ERP-administraties en de SOAP-prijsdienst van een
+                    leverancier. Ontworpen, gebouwd en live in één maand: een catalogus van
+                    2,4 miljoen producten, zoeken onder 50 ms over 1,2 miljoen rijen, een
+                    hot path van 8,5 s naar minder dan 0,1 s, 900k rijen ingelezen zonder
+                    één fout. Mutatietests en fuzzing vingen een prijsfout van 45% op
+                    voor een klant ze te zien kreeg.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>AI-assistent voor de klantendienst — e-commerce</h3>
+                <p class="meta">2026 · bttmline · LangGraph · pgvector · Claude- en Gemini-API's</p>
+                <p>
+                    Van helpdesk-webhook via een LangGraph-pipeline naar een conceptantwoord
+                    in het Nederlands, Frans of Engels, met validatoren en een reviewlus die
+                    correcties terug in de kennisbank stopt. Eerst 8.700 tickets
+                    geanalyseerd; 510 geautomatiseerde tests; een evaluatiescherm voor
+                    A/B-promptruns. Overgedragen met volledige documentatie.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Automatisering van overheidsportalen — agrologistiek</h3>
+                <p class="meta">2026 · bttmline · Playwright · NestJS · PostgreSQL</p>
+                <p>
+                    Playwright-automatisering tegen Vlaamse overheidsplatformen (Mestbank,
+                    TRACES) en een transportbeheer-API, met een authenticatie-toestandsmachine,
+                    volledig geteste routeringsregels en de DNS- en serveropzet errond.
+                    Het onglamoureuze loodgieterswerk dat dagelijks handwerk wegneemt.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Mileviewer — logistieke monitoring voor Maersk</h3>
+                <p class="meta">2020–2022 · Oakfields · Node.js · MongoDB · React · Elasticsearch · AWS</p>
+                <p>
+                    De meeste nieuwe functies ontwikkeld voor een SaaS die 15 Maersk-kantoren
+                    gebruikten. Toen de lead developer vertrok, heb ik het een jaar alleen
+                    gerund: een importpipeline van 1.200 regels gedocumenteerd die niemand
+                    begreep, 13,3 miljoen records opgekuist tot 406k, de CI/CD en monitoring
+                    gebouwd, de releases uitgebracht, gebruikersonderzoek ter plaatse in
+                    Amsterdam.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hoe ik werk</h2>
+            <p>
+                Geschreven specificaties en acceptatiecriteria vóór de code; een definition
+                of done vóór "klaar". Tests die het systeem proberen te breken:
+                mutatietests, property-based tests, adversarial review. AI-ondersteund
+                ontwikkelen met de acties van de agent afgeschermd en gelogd. Verslagen
+                op papier, in jouw taal. Standaard op afstand, ter plaatse als het helpt;
+                Brussel, Maastricht en Hasselt liggen alle drie binnen het uur.
+            </p>
+        </section>
+
+        <section>
+            <h2>Agents &amp; onderzoek</h2>
+            <p>
+                Een jaar eigen onderzoek naar wat LLM-agents echt doet werken: harnassen
+                waarin agents acht commerciële games effectief spelen (Factorio, Kerbal
+                Space Program, Dwarf Fortress, …) via op maat gebouwde mods, MCP-servers
+                en zorgvuldig gekozen toolinterfaces. De overdraagbare conclusie (agents
+                falen op screen-scraping en slagen op gestructureerde toestand op het
+                juiste abstractieniveau) is hetzelfde recept dat agentgestuurde QA,
+                playtesting en live-ops-tooling nodig hebben.
+            </p>
+            <ul class="plain">
+                <li><a href="https://qry.zone/doug-demon-core/">The Doug Demon Core</a> — wat een agent die zijn eigen tooling patchte me leerde over veiligheid (Engels)</li>
+                <li><a href="https://github.com/QRY91/uroboro">uroboro</a> — local-first vastleggen van ontwikkelcontext, Claude Code-integratie</li>
+                <li><a href="https://chasmlogic.com">chasmlogic.com</a> — de creatief-technologische kant: echte agentruns, vertelling met een mens als poortwachter</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achtergrond</h2>
+            <p>
+                Vóór software werkte ik vier jaar in het klantencontactcenter van Carglass,
+                in het Nederlands en het Frans. Daarna een C#-bootcamp bij
+                Train4SmartServices (2019–2020), drie jaar bij Oakfields, een logistiek
+                softwarebedrijf waar ik uiteindelijk het product runde, een graduaat
+                Programmeren aan PXL met een stage bij BornDigital, en een jaar bij
+                bttmline, een kleine consultancy, bouwend voor kmo-klanten.
+                <a href="/nl/over/">De lange versie.</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Gereedschap</h2>
+            <p>
+                TypeScript/Node (NestJS, Nuxt, React) · Go · Python · Rust · C ·
+                PostgreSQL en pgvector · Docker, k3s en Ansible (homelab met lokale
+                inferentie) · Playwright · MCP-servers · LangGraph · game-engines
+                (Godot, LÖVE) in de marge. Verificatiegewoontes: mutatietests,
+                property/fuzz-tests, adversarial agentic review en eerlijke
+                definities van "klaar".
+            </p>
+        </section>
+
+        <section>
+            <h2>Teksten</h2>
+            <ul class="plain">
+                <li><a href="https://qry.zone/doug-demon-core/">The Doug Demon Core</a> — een agent patchte zijn eigen tooling; wat ik daarna veranderde</li>
+                <li><a href="https://qry.zone/who-validates-the-validators/">Who validates the validators?</a> — verificatie als de reviewer ook een model is</li>
+                <li><a href="https://qry.zone/what-i-can-actually-do/">What I can actually do</a> — een week AI-ondersteunde output, gemeten, met de beperkingen</li>
+            </ul>
+            <p>Meer op <a href="https://qry.zone">qry.zone</a> (Engels).</p>
+        </section>
+
+        <footer>
+            <p>Stuur wat je hebt: een repo, een schermopname, een lijst problemen. Ik antwoord binnen twee werkdagen.</p>
+            <div class="contact">
+                <a href="mailto:glenn@bokondo.net">glenn@bokondo.net</a>
+                <span>Lanaken</span>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
