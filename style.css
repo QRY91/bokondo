@@ -25,9 +25,7 @@ body {
 main { max-width: var(--measure); margin: 0 auto; padding: 40px 20px; }
 nav.site { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 24px; color: var(--green); }
 nav.site a[aria-current="page"] { color: var(--title); }
-nav.site .lang { margin-left: auto; display: inline-flex; align-items: center; line-height: 1; }
-nav.site .lang img { display: block; height: 12px; width: auto; border: 1px solid var(--rule); border-radius: 1px; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+nav.site .lang { margin-left: auto; color: var(--orange); letter-spacing: 0.05em; }
 header.card {
     text-align: center;
     margin-bottom: 40px;
